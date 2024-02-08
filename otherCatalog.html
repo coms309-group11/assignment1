@@ -58,6 +58,14 @@
         height: 2.75rem;
         overflow-y: hidden;
       }
+      .nav-link{
+        color: white;
+        font-size: large;
+      }
+
+      .nav-item-text{
+        padding-top: 10px;
+      }
 
       .nav-scroller .nav {
         display: flex;
@@ -169,7 +177,7 @@
 <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
   <div class="container">
     <a class="navbar-brand d-md-none" href="#">
-      <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+      <img src="./images/carLogo.svg" style="height: 50px; width: 50px;">
       Catalog of Items
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
@@ -183,11 +191,11 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav flex-grow-1 justify-content-between">
           <li class="nav-item"><a class="nav-link" href="#">
-            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+            <img src="./images/carLogo.svg" style="height: 50px; width: 50px;">
           </a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About The Authors</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html">Product Page 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="otherCatalog.html">Product Page 2</a></li>
+          <li class="nav-item-text"><a class="nav-link" href="index.html">Cars</a></li>
+          <li class="nav-item-text"><a class="nav-link" href="otherCatalog.html">Car Parts</a></li>
+          <li class="nav-item-text"><a class="nav-link" href="about.html">About Us</a></li>
         </ul>
       </div>
     </div>
@@ -197,58 +205,100 @@
 <main>
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
     <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-3 fw-bold">Second Page of Products</h1>
-      <h3 class="fw-normal text-muted mb-3">This is the second page.</h3>
+      <h1 class="display-3 fw-bold">Car Parts</h1>
+      <h3 class="fw-normal text-muted mb-3">Car parts with prices and description</h3>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
-        <a class="icon-link" href="#">
-          Learn more
-          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-        </a>
-        <a class="icon-link" href="#">
-          Buy
-          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-        </a>
       </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+        <h2 class="display-5">Battery</h2>
+        <p class="lead">The battery life of your car it provides the electricty the car needs to 
+          power your vehicle. Without power your car will not start. Inside the battery there are cells
+          comprised of lead dioxide plate and a lead plate. Batteries usually run from $230 the $400 if you 
+          ever need to replace.<br><br><br><br><br>
+        </p>
       </div>
-      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <div class="bg-body-tertiary mx-auto d-flex justify-content-center align-items-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./images/Battery.jpg" alt="Battery" width = "85%" height="80%" class ="mx-auto">
+      </div>
     </div>
     <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+        <h2 class="display-5">Engine</h2>
+        <p class="lead">Machine made to convert the heat from burning gas into the force that turns the wheels.
+          A spark ignites a mixture of petrol vapor and air that has been compressed inside a momentarily sealed cylinder
+           and causes it to burn. If you ever need a new engine it will cost your around $1500 to $7500.<br><br><br><br>
+        </p>
+
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <div class="bg-dark mx-auto d-flex justify-content-center align-items-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./images/engine.jpg" alt="Engine" width = "90%" height="auto" class ="mx-auto">
+      </div>
     </div>
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+        <h2 class="display-5">Transmission</h2>
+        <p class="lead">A car transmission is debatbly the most important components of a car. It is what moves the power 
+          generated from the engine to the wheels. There are more then one type of transmission in a car 
+          it can either be automatic or manual. The cost for a new transmission would cost anywhere from $3000 to $9000.
+        </p>
+
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <div class="bg-dark mx-auto d-flex justify-content-center align-items-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./images/Transmission.jpg" alt="Transmission" width = "90%" height="auto" class ="mx-auto">
+      </div>
     </div>
     <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+        <h2 class="display-5">Radiator</h2>
+        <p class="lead">Radiators are used to transfer thermal energy from one medium to another to cool or heat he car. 
+          A radiator is a device that consist of a large cooling surface which contains are that spreads through water to cool 
+          the car. The price for a radiator ranges from $400 to $900.<br><br>
+        </p>
       </div>
-      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <div class="bg-body-tertiary mx-auto d-flex justify-content-center align-items-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./images/Radiator.jpg" alt="Radiator" width = "90%" height="70%" class ="mx-auto">
+      </div>
     </div>
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">AC Compressor</h2>
+        <p class="lead">The compressor is the main part the HVAC system of your car. It the compresses refridgerant (liquid that cools the air) 
+          into a smaller volume, this raises its pressure and temp. It will subsequently increase the energy efficiency. 
+          The prices range from $100 to $1480 depending on where the compressor is.                 
+        </p>
+      </div>
+      <div class="bg-body mx-auto d-flex justify-content-center align-items-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./images/AC_Compressor.jpg" alt="AC Compressor" width = "90%" height="auto" class ="mx-auto">
+      </div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Brakes</h2>
+        <p class="lead">Recently new cars have brakes on all four wheels, operated by a hydraulic system. There are two types of brakes 
+          disc type or drum type. Front brakes are stronger than the back brakes because when a car stops it forces the cars 
+        weight to shift forward onto the front brakes.<br><br>
+                                                                    </p>
+      </div>
+      <div class="bg-body mx-auto d-flex justify-content-center align-items-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./images/Brakes.jpg" alt="Brakes" width = "90%" height="auto" class ="mx-auto">
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-5">Another headline</h2>
@@ -262,32 +312,14 @@
         <p class="lead">And an even wittier subheading.</p>
       </div>
       <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
+    </div> -->
   </div>
 </main>
 
 <footer class="container py-5">
   <div class="row">
     <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-      <small class="d-block mb-3 text-body-secondary">&copy; 2024 Alex Brown & Drew Gooding</small>
+      <small class="d-block mb-3 text-body-secondary"><img src="./images/carLogo.svg" style="height: 100px; width: 100px;">                             &copy; 2024 Alex Brown & Drew Gooding</small>
     </div>
   </div>
 </footer>
