@@ -46,6 +46,14 @@
         width: 1.5rem;
         height: 100vh;
       }
+      .nav-link{
+        color: white;
+        font-size: large;
+      }
+
+      .nav-item-text{
+        padding-top: 10px;
+      }
 
       .bi {
         vertical-align: -.125em;
@@ -93,6 +101,12 @@
 
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
+      }
+      .authorPageInfo h1{
+        padding-left: 225px;
+      }
+      .authorPageInfo p {
+        padding-left: 525px;
       }
     </style>
 
@@ -169,7 +183,7 @@
 <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
   <div class="container">
     <a class="navbar-brand d-md-none" href="#">
-      <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+      <img src="./images/carLogo.svg" style="height: 50px; width: 50px;">
       Catalog of Items
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
@@ -183,11 +197,11 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav flex-grow-1 justify-content-between">
           <li class="nav-item"><a class="nav-link" href="#">
-            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+            <img src="./images/carLogo.svg" style="height: 50px; width: 50px;">
           </a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About The Authors</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html">Product Page 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="otherCatalog.html">Product Page 2</a></li>
+          <li class="nav-item-text"><a class="nav-link" href="index.html">Cars</a></li>
+          <li class="nav-item-text"><a class="nav-link" href="otherCatalog.html">Car Parts</a></li>
+          <li class="nav-item-text"><a class="nav-link" href="about.html">About Us</a></li>
         </ul>
       </div>
     </div>
@@ -200,18 +214,10 @@
       <h1 class="display-3 fw-bold">About the authors</h1>
       <h3 class="fw-normal text-muted mb-3">This is a page about the authors</h3>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
-        <a class="icon-link" href="#">
-          Learn more
-          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-        </a>
-        <a class="icon-link" href="#">
-          Buy
-          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-        </a>
       </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
@@ -229,73 +235,30 @@
     </div>
     <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+        <h2 class="display-5">Alex Brown</h2>
+        <p class="lead">My name is Alex, and I am a Junior studying Computer Engineering at Iowa State University. Technology has always been one of my strong suits and I went into this field to grow my skills. I love programming and someday want to start my own company. </p>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./images/alex.png" alt="Alex's Profile Photo" width = "auto" height=300px class ="mx-auto">
+      </div>
     </div>
   </div>
-
-  <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
+  <div class="authorPageInfo">
+    <h1 class="authorPageInfo">This webpage was created for COM S 319 Assignment 1</h1>
+    <p class="authorPageInfo">Submission Date: February 8, 2024 for Professor Jannesari Ali.</p>
+    <p class="authorPageInfo">drewgood@iastate.edu</p>
+    <p class="authorPageInfo">albrown3@iastate.edu</p>
   </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div> -->
 </main>
 
 <footer class="container py-5">
-    <div class="row">
-      <div class="col-12 col-md">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-        <small class="d-block mb-3 text-body-secondary">&copy; 2024 Alex Brown & Drew Gooding</small>
-      </div>
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3 text-body-secondary"><img src="./images/carLogo.svg" style="height: 100px; width: 100px;">                             &copy; 2024 Alex Brown & Drew Gooding</small>
     </div>
-  </footer>
+  </div>
+</footer>
 <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
